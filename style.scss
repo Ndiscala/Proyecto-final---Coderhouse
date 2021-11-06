@@ -1,0 +1,67 @@
+$ff-capriola: 'Capriola', sans-serif;
+
+header{
+    background-color: gray;
+}
+
+.nav__menu-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav__menu-div div{
+    display: flex;
+    margin: 20px;
+    padding: 0px;
+    width: 100px;
+}
+.nav__menu-div a{
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    text-shadow: 2px 2px 4px black;
+    font-family: $ff-capriola;
+}
+h2 {
+    font-size: 26px;
+    font-family: $ff-capriola;
+    padding: 20px;
+    margin: 50px;
+    text-shadow: 2px 2px 4px rgb(117, 104, 104);
+}
+
+footer{
+    background-color: green;
+    
+}
+
+.footer__devolucion {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.footer__devolucion--nav div{
+    padding: 5px;
+}
+.footer__devolucion--nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+    font-family: $ff-capriola;
+}
+
+.footer__devolucion--menu p,a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+    font-family: $ff-capriola;
+}
+
+
+
+    
+
+

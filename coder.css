@@ -4,6 +4,7 @@
     background-color: white;
     color: black;   
 }
+ 
 
 .header__navbar {
     display: flex;
@@ -11,11 +12,10 @@
 }
 
 .header_banner {
-    background: linear-gradient(to bottom, #ffcccc 0%, #ff6666 100%);
+    background-image: linear-gradient( 0.1deg, rgba(228,228,228,1) 9.3%, rgba(179,179,179,1) 94.2% );
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
 }
 
 .portada__principal {
@@ -75,35 +75,12 @@
 }
 
 
-
-
-
 .h1-titulo {
     font-family: 'Capriola', sans-serif;
     text-align: center;
     font-size: 50px;
-    text-shadow: 2px 2px 4px rgb(85, 82, 82);
-    
+    text-shadow: 2px 2px 4px rgb(85, 82, 82);  
 }
-
-.main__div {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-.main__div div {
-    justify-content: center;
-}
-
-img {
-    width: 300px;
-    height: 250px;
-    margin: 0px 25px 25px 50px;
-    padding: 15px;
-    cursor: pointer;
-}
-
 .table {
     text-align: center;
 }
@@ -122,7 +99,8 @@ iframe {
 }
 
 footer { 
-    background: linear-gradient(to top, #ffcccc 0%, #ff6666 100%);
+    background: black;
+    
 }
 
 
@@ -130,9 +108,26 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-
+    background-color: black;
+    height: 25vh;
 }
 
+.footer__redes--navegacion {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    font-size: 15px;
+
+
+
+}
+.footer__redes--navegacion a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Capriola', sans-serif;
+    font-size: 15px;
+    
+}
 
 
 .footer__menu {
@@ -140,29 +135,29 @@ footer {
     flex-flow: column nowrap;
     justify-content: space-around;
     text-decoration: none;
-    color: rgba(104, 102, 102, 0.829);
-    font-size: 25px;
+    color: white;
+    font-size: 15px;
     
 
 }
 
 .icono {
-    color: black;
+    color:white;
 }
 
 
 
 .footer__menu a {
     text-decoration: none;
-    color: rgba(104, 102, 102, 0.829);
-    font-size: 25px;
+    color: white;
+    font-size: 15px;
     font-family: 'Capriola', sans-serif;
     text-transform: uppercase; 
 } 
 
 .footer__menu p {
     
-    color: black;
+    color: white;
 } 
 
 .footer__menu div {
@@ -174,148 +169,101 @@ footer {
     flex-flow: column nowrap;
     justify-content: space-around;
     text-decoration: none;
-    color: rgba(104, 102, 102, 0.829);
-    font-size: 25px;
+    color: white;
+    font-size: 15px;
     text-transform: uppercase;
     font-family: 'Capriola', sans-serif;
 }
 
 .footer__menu-redes i {
-    color: black;
-    font-size: 80px;
+    color:white;
+    font-size: 30px;
 
 }
 
 .footer__menu-redes {
-    color: black;
+    color:white;
 }
 
 .made {
     font-family: 'Capriola', sans-serif;
-    font-size: small;
+    font-size: 10px;
 }
 
  /*------------SECCION PRODUCTOS-----------*/
+ .header__navbar-prod{
+     background-image: linear-gradient( 0.1deg, rgba(228,228,228,1) 9.3%, rgba(179,179,179,1) 94.2% );
 
-#prod-grilla {
-    display: grid;
-    grid-template-columns: 20% auto 15%;
-    grid-template-rows: 100 px 1fr 1fr 75%;
-    grid-template-areas: 
-    "header header header"
-    "productos productos productos"
-    "productos productos productos"
-    "footer footer footer";
+ }
+
+.d-flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+.card {
+    margin: 35px;
 }
 
-.header {
-    background: linear-gradient(to bottom, #ffcccc 0%, #ff6666 100%);
-    grid-area: header;
     
 
-}
 
-.grilla__prod {
-    display: inline-block;
-}
 
-.grilla__prod div{
-    display: inline-block;
-    padding: 30px;
-    
-}
 
-.grilla__prod a{
-    text-decoration: none;
-    font-family: 'Capriola', sans-serif;
-    color: white;
-    font-size: 26px;
-    text-shadow: 2px 2px 4px black;
-}
 
-.productos {
-    background-color: white;
-    grid-area: productos;
-    display: inline-block;
-}
-.productos div{
-    display: inline-block;
-}
 
-.footer {
-    background: linear-gradient(to top, #ffcccc 0%, #ff6666 100%);
-    grid-area: piedepag;
-    
-}
+
+
+
+
+
+
+
+
 
 
 /*------------SECCION CONTACTO-----------*/
-.header_banner--contacto {
-    background: linear-gradient(to top, #ffcccc 0%, #ff6666 100%);
-}
-
-h3 {
+.contacto__h1 {
+    font-family: 'Capriola', sans-serif;
+    color:rgb(134, 125, 125);
+    font-size: 30px;
     text-align: center;
-    font-family: 'Capriola', sans-serif;
-    ;
+    padding-top: 30px;
+}
+.row{
+    padding: 100px;
+    border: black;
+
 }
 
-.flex__container--contacto {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    height: 25vh;
-    padding-top: 15px;
+
+.container-fluid {
+    background-color:  pink;
+    height: 15vh;
 }
 
-.flex__container--contacto div {
-    text-decoration: none;
-    
-}
-
-.flex__container--contacto a {
+.container-fluid a {
     font-family: 'Capriola', sans-serif;
     text-decoration: none;
-    color: white;
-    font-size: 26px;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px white;   
 }
-
-form {
-    display: flex;
-    flex-flow: column nowrap;
-    
-}
-.formulario p {
-    font-size: 15px;
+.d-flex p{
     font-family: 'Capriola', sans-serif;
+    text-decoration: none;
+    font-size: 10px;
+    text-shadow: 2px 2px 4px white;
 }
-.formulario div{
-    padding: 5px;
-    margin-left: 35%;
-    
+.footer__menu a{
+    font-family: 'Capriola', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px white;
 }
-
-.formulario input {
-    align-items: center;
-    width: 250px;
-}
-.formulario textarea {
-    height: 150px;
-    width: 250px;
-
-}
-
-.btn {
-    border-radius: 1px;
-    display: inline-block;
-    padding: 20px 15px;
-    color: white;
-    background-color: rgb(7, 177, 245);
-    width: 100px;
-}
-
-.btn:hover {
-    background-color: rgb(7, 124, 170);
+.footer__menu-redes {
+    font-family: 'Capriola', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px white;
 }
 
 
@@ -338,9 +286,4 @@ form {
     }
 }
 
-    
-
-
-
-
-
+/*------------SECCION DEVOLUCION-----------*/
