@@ -2,67 +2,31 @@
 
 .fondo {
     background-color: white;
-    color: black;   
+    color: black; 
+    font-size: 1.2rem;
+    line-height: 1.6em; 
+    
+
 }
  
-
-.header__navbar {
-    display: flex;
-    flex-direction: column;   
-}
-
 .header_banner {
-    background-image: linear-gradient( 0.1deg, rgba(228,228,228,1) 9.3%, rgba(179,179,179,1) 94.2% );
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: linear-gradient( 0.1deg, rgba(228,228,228,1) 9.3%, rgba(179,179,179,1) 94.2% ); 
+    position: fixed;
+    width: 100%;
 }
-
-.portada__principal {
-    display: flex;
-    flex-flow: row nowrap;
-    width: auto;
-    height: 25vh;
-}
-
 .logo img {
-    width: 150px;
-    height: 150px;
+    width: 4.5em ;
+    height: 4.5em;
 }
-
-.asesor {
-    font-size: small;
-    font-family: 'Arial Narrow Bold', sans-serif;     
-}
-
-.asesor a {
-    text-decoration: none;
-    color: black; 
-    text-align: center; 
-    
-    
-}
-
-.asesor p {
-    text-align: center;
-    
-    
-}
-
 .flex__container-menu {
     display: flex;
-    padding: 0px 20px 20px 20px;
-    flex-flow: row nowrap;
+    padding: 20px; 
     justify-content: space-around;
- 
+    align-items: center;
 }
 
 .flex__container-menu div {
-    margin: 20px;
-    padding: 0px;
-    width: 100px;
-    
-    
+    width: 100px;   
 }
 
 .flex__container-menu a {
@@ -71,7 +35,14 @@
     color: white;
     font-size: 26px;
     text-shadow: 2px 2px 4px black;
-
+    transition: all 0.4 linear;
+    border-radius: 5px;
+}
+.flex__container-menu a:hover {
+    background-color: rgb(243, 243, 242);
+}
+.main{
+    padding-top: 12rem;
 }
 
 
@@ -287,3 +258,168 @@ footer {
 }
 
 /*------------SECCION DEVOLUCION-----------*/
+
+
+
+
+/*------------RESPONSIVE-----------*/
+
+
+@media only screen and (max-width:767px) {
+    .header_banner {
+        background-image: linear-gradient( 0.1deg, rgba(228,228,228,1) 9.3%, rgba(179,179,179,1) 94.2% ); 
+         width: 100%;
+    }
+    .logo img {
+        width: 4.5em ;
+        height: 4.5em;
+    }
+    .flex__container-menu {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 20px; 
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .flex__container-menu div {
+        width: 100px;   
+    }
+    
+    .flex__container-menu a {
+        font-family: 'Capriola', sans-serif;
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+        text-shadow: 2px 2px 4px black;
+        transition: all 0.4 linear;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    .flex__container-menu a:hover {
+        background-color: rgb(243, 243, 242);
+    }
+    .main{
+        padding-top: 12rem;
+    }
+    
+    
+    .h1-titulo {
+        font-family: 'Capriola', sans-serif;
+        text-align: center;
+        font-size: 50px;
+        text-shadow: 2px 2px 4px rgb(85, 82, 82); 
+        display: block;
+        padding: 15px; 
+    }
+    .table {
+        text-align: center;
+    }
+    
+    .article {
+        font-family: 'Courgette', cursive;
+        font-size: 25px;
+        text-align: center;
+    
+    }
+    
+    iframe {
+        padding: 20px;
+        margin: 0px 25px 25px 250px;
+        
+    }
+    
+    footer { 
+        background: black;
+        
+    }
+    
+    
+    .footer__redes {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        background-color: black;
+        
+    }
+    
+    .footer__redes--navegacion {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        font-size: 15px;
+    
+    
+    
+    }
+    .footer__redes--navegacion a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Capriola', sans-serif;
+        font-size: 15px;
+        
+    }
+    
+    
+    .footer__menu {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        
+    
+    }
+    
+    .icono {
+        color:white;
+    }
+    
+    
+    
+    .footer__menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-family: 'Capriola', sans-serif;
+        text-transform: uppercase; 
+    } 
+    
+    .footer__menu p {
+        
+        color: white;
+    } 
+    
+    .footer__menu div {
+        font-family: 'Capriola', sans-serif;
+    }
+    
+    .footer__menu-redes {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-family: 'Capriola', sans-serif;
+    }
+    
+    .footer__menu-redes i {
+        color:white;
+        font-size: 30px;
+    
+    }
+    
+    .footer__menu-redes {
+        color:white;
+    }
+    
+    .made {
+        font-family: 'Capriola', sans-serif;
+        font-size: 10px;
+    }
+
+    
+}
