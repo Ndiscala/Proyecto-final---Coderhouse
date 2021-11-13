@@ -40,9 +40,18 @@ h2 {
     margin: 50px;
     text-shadow: 2px 2px 4px rgb(117, 104, 104);
 }
+.texto {
+    padding: 10px;
+    margin: 5px;
+}
+.texto p{
+    font-size: 18px;
+}
+
+
 
 footer{
-    background-color: green;
+    background-color: black;
     
 }
 
@@ -52,7 +61,7 @@ footer{
     justify-content: space-around;
 }
 .footer__devolucion--nav div{
-    padding: 5px;
+    padding: 10px;
 }
 .footer__devolucion--nav a{
     text-decoration: none;
@@ -66,6 +75,15 @@ footer{
     text-decoration: none;
     color: white;
     font-size: 20px;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 4px white;
     font-family: $ff-capriola;
+}
+.footer__menu-redes {
+
+}
+.footer__menu-redes p{
+    color: white;
+    font-size: 20px;
+    font-family: $ff-capriola;
+
 }

@@ -21,15 +21,19 @@ guardarLocal("StockDePlantas", JSON.stringify(productos));
 
 
 class Plantas {
-  constructor (tipo,especie){
-    this.id = id;  
-    this.tipo = tipo;
-    this.tamaño = tamaño;
-    this.especie = especie;
-    this.precio = parseFloat(precio);
-    this.disponible = true;
-    return Id;
-  }
+    constructor (tipo,especie){
+      this.id = id;  
+      this.tipo = tipo;
+      this.tamaño = tamaño;
+      this.especie = especie;
+      this.precio = parseFloat(precio);
+      this.disponible = true;
+      this.verPlanta = `Seleccionaste la planta: ${tipo}, del tamaño: ${this.tamaño}, especie: ${especie}, su precio es: ${this.precio}.`
+      return Id;
+    }
+    verPlanta(){
+      document.write(this.verPlanta);
+    }
 }
 
 do {
@@ -93,6 +97,22 @@ function interactuar (){
   alert("Hola "+ nombre + "Hoy es día " + fecha);
 }
 
+// JQUERY CON AJAX
+
+function obtenerDatos (){
+  const URLGET = "";
+  $.get(URLGET).done(function(resultado, estado)){
+    console.log("El estado que retorna la API es: "+ estado);
+  }
+  if (estado == "success"){
+    let libros = resultado.books;
+    libros.forEach(libro => {
+
+    });
+  } 
+}
+
+obtenerDatos();
 
 
 
