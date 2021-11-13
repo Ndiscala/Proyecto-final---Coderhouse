@@ -72,6 +72,7 @@ iframe {
 footer { 
     background: black;
     
+    
 }
 
 
@@ -80,7 +81,7 @@ footer {
     flex-flow: row wrap;
     justify-content: space-around;
     background-color: black;
-    height: 25vh;
+
 }
 
 .footer__redes--navegacion {
@@ -164,7 +165,6 @@ footer {
  /*------------SECCION PRODUCTOS-----------*/
  .header__navbar-prod{
      background-image: linear-gradient( 0.1deg, rgba(228,228,228,1) 9.3%, rgba(179,179,179,1) 94.2% );
-
  }
 
 .d-flex {
@@ -223,6 +223,15 @@ footer {
     text-decoration: none;
     font-size: 10px;
     text-shadow: 2px 2px 4px white;
+}
+.footer__red a{
+    font-family: 'Capriola', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px white;
+
+
 }
 .footer__menu a{
     font-family: 'Capriola', sans-serif;
